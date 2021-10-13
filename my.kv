@@ -1,0 +1,63 @@
+<MyGrid>:
+
+    smid: smid
+    passw: passw
+    fdl: fdl
+    tdl: tdl
+    tm: tm
+    nm: nm
+
+    GridLayout:
+        cols:1
+        size: root.width, root.height
+
+        GridLayout:
+            cols:2
+
+            Label:
+                text: "SMID "
+
+            TextInput:
+                id: smid
+                multiline:False
+
+            Label:
+                text: "Password "
+
+            TextInput:
+                id: passw
+                multiline:False
+
+            Label:
+                text: "From Days Late "
+
+            TextInput:
+                id: fdl
+                multiline:False
+
+            Label:
+                text: "To Days Late "
+
+            TextInput:
+                id: tdl
+                multiline:False
+
+            Label:
+                text: "Text Message "
+
+            TextInput:
+                id: tm
+                multiline:False
+                text: "Hello. This is U-Haul Moving and Storage at West Oaks. Your storage unit payment is overdue. Please give us a call back at (281)-556-5194. Thank you."
+
+            Label:
+                text: "Note Message "
+
+            TextInput:
+                id: nm
+                multiline:False
+                text: "Left a text message."
+
+        Button:
+            text:"Submit"
+            on_press:root.btn()
